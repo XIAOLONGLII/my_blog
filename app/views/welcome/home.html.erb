@@ -7,42 +7,7 @@
 <![endif]-->
 
 <!-- ______________________________________________________________________________________________________-->
-<!-- This is the Herizontal lists start -->
-<style>
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333333;
-}
 
-li2 {
-    float: left;
-}
-
-li2 a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 16px;
-    text-decoration: none;
-}
-
-li2 a:hover {
-    background-color: #111111;
-}
-</style>
-
-<body>
-
-<ul>
-  <li2><a href="#home">Home</a></li2>
-  <li2><a href="#news">News</a></li2>
-  <li2><a href="#contact">Contact</a></li2>
-  <li2><a href="#about">About</a></li2>
-</ul>
-<!-- 1This is the Herizontal lists ends-->
 
 
 <!-- ______________________________________________________________________________________________________-->
@@ -83,17 +48,17 @@ li2 a:hover {
 <section>
 
 <h1 style = "font-family:verdana; text-align:center">XIAOLONG LI</h1>
-<h1 style = " text-align:center"><sup><ins>xiaolong-blog.herokuapp.com</ins></sup></h1>
+<h1 style = " text-align:center"><ins><a href="https://xiaolong-blog.herokuapp.com"> xiaolong-blog.herokuapp.com</a></ins></h1>
  <!-- ______________________________________________________________________________________________________-->
-<p><a href="https://xiaolong-blog.herokuapp.com">xiaolong-blog.herokuapp.com</a></p>
+<!--<p><a href="https://xiaolong-blog.herokuapp.com">xiaolong-blog.herokuapp.com</a></p>
  <!-- ______________________________________________________________________________________________________-->
-
+<h1>EXPERIENCE</h1>
 <article>
 <h2 style = "font-family:courier;"><i>London</i></h2>
 <li>London is the capital city of England. It is the most populous city in the United Kingdom,
 with a metropolitan area of over 13 million inhabitants.</li>
 <li>London is beautiful </li>
-<li><myhero>That is London!!!!</myhero></li>
+<li>That is London!!!!</li>
 
 </article>
 
@@ -124,201 +89,14 @@ with a metropolitan area of over 13 million inhabitants.</li>
 </section>
 
 
-<!-- ______________________________________________________________________________________________________-->
-<!-- This is where bubble started-->
-<script>
-function light(sw) {
-    var pic;
-    if (sw == 0) {
-        pic = "pic_bulboff.gif"
-    } else {
-        pic = "pic_bulbon.gif"
-    }
-    document.getElementById('myImage').src = pic;
-}
-</script>
-
-
-
-<img id="myImage" src="pic_bulboff.gif" width="100" height="180">
-
-<style>
-myImage {
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    z-index: -1;
-}
-</style>
-
-
-
-
-<p>
-<button type="button" onclick="light(1)">Light On</button>
-<button type="button" onclick="light(0)">Light Off</button>
-</p>
-<!-- This is where bubble ended-->
-
-</body>
 
 
 <!-- ______________________________________________________________________________________________________-->
-<body>
 
-<h1>The place I live</h1>
-
-<div id="map" style="width:400px;height:400px;background:yellow"></div>
-
-<script>
-function myMap() {
-var mapOptions = {
-    center: new google.maps.LatLng(40.730610, -73.935242),
-    zoom: 10,
-    mapTypeId: google.maps.MapTypeId.HYBRID
-}
-var map = new google.maps.Map(document.getElementById("map"), mapOptions);
-
-
-
-
-
-
-var marker = new google.maps.Marker({
-          // The below line is equivalent to writing:
-          // position: new google.maps.LatLng(-34.397, 150.644)
-          position: {lat: 40.730610, lng: -73.935242},
-          map: map
-        });
-
-        // You can use a LatLng literal in place of a google.maps.LatLng object when
-        // creating the Marker object. Once the Marker object is instantiated, its
-        // position will be available as a google.maps.LatLng object. In this case,
-        // we retrieve the marker's position using the
-        // google.maps.LatLng.getPosition() method.
-        var infowindow = new google.maps.InfoWindow({
-          content: '<p>Marker Location:' + marker.getPosition() + '</p>'
-        });
-
-       
-}
-</script>
-
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
-<!--
-To use this code on your website, get a free API key from Google.
-Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
--->
-
-</body>
 
 <!-- ______________________________________________________________________________________________________-->
 <!-- ______________________________________________________________________________________________________-->
 <!-- ______________________________________________________________________________________________________-->
-
-
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-* {
-  box-sizing: border-box;
-}
-.menu {
-  float:left;
-  width:20%;
-}
-.menuitem {
-  padding:8px;
-  margin-top:7px;
-  border-bottom:1px solid #f1f1f1;
-}
-.main {
-  float:left;
-  width:60%;
-  padding:0 20px;
-}
-.right {
-  background-color:lightblue;
-  float:left;
-  width:20%;
-  padding:10px 15px;
-  margin-top:7px;
-}
-
-@media only screen and (max-width:800px) {
-  /* For tablets: */
-  .main {
-    width:80%;
-  }
-  .right {
-    width:100%;
-  }
-}
-@media only screen and (max-width:500px) {
-  /* For mobile phones: */
-  .menu, .main, .right {
-    width:100%;
-  }
-}
-</style>
-</head>
-<body style="font-family:Verdana;">
-
-<div style="background-color:#f1f1f1;padding:15px;">
-  <h1>The Puplit Rock</h1>
-</div>
-
-<div style="overflow:auto">
-  <div class="menu">
-    <div class="menuitem">The Drive</div>
-    <div class="menuitem">The Walk</div>
-    <div class="menuitem">The Return</div>
-    <div class="menuitem">The End</div>
-  </div>
-
-  <div class="main">
-    <h2>The Walk</h2>
-    <p>The walk to the Pulpit Rock will take you approximately two hours, give or take an hour depending on the weather conditions and your physical shape.</p>
-    <img src="img_pulpit.jpg" style="width:100%">
-  </div>
-
-  <div class="right">
-    <h2>What?</h2>
-    <p>The Pulpit Rock is a part of a mountain that looks like a pulpit.</p>
-    <h2>Where?</h2>
-    <p>The Pulpit Rock is in Norway.</p>
-    <h2>Price?</h2>
-    <p>The Walk is free!</p>
-  </div>
-</div>
-
-<div style="background-color:#f1f1f1;text-align:center;padding:10px;margin-top:7px;font-size:12px;">This web page is a part of a demonstration of fluid web design made by w3schools.com. Resize the browser window to see the content respond to the resizing.</div>
-
-</body>
-<!-- ______________________________________________________________________________________________________-->
-<!-- ______________________________________________________________________________________________________-->
-<!-- ______________________________________________________________________________________________________-->
-
-<title>Font Awesome Icons</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-<body>
-
-<p>Some Font Awesome icons:</p>
-<i class="fa fa-cloud"></i>
-<i class="fa fa-heart"></i>
-<i class="fa fa-car"></i>
-<i class="fa fa-file"></i>
-<i class="fa fa-bars"></i>
-
-<p>Styled Font Awesome icons (size and color):</p>
-<i class="fa fa-cloud" style="font-size:24px;"></i>
-<i class="fa fa-cloud" style="font-size:36px;"></i>
-<i class="fa fa-cloud" style="font-size:48px;color:red;"></i>
-<i class="fa fa-cloud" style="font-size:60px;color:lightblue;"></i>
-
-</body>
 
 
 
