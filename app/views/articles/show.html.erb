@@ -1,5 +1,5 @@
 <h1>Showing selected article</h1>
-
+<%= link_to "Check all articles", articles_path %>
 <p>
     Title: <%= @article.title %>
   
@@ -9,3 +9,7 @@
     Description: <%= @article.description %>
   
 </p>
+
+<%= link_to 'Edit', edit_article_path(@article) %> |
+
+<%= link_to "Back", articles_path %>
